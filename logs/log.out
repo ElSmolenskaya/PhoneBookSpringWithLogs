@@ -1,0 +1,4 @@
+2023-04-02 13:49:37,584 INFO  ts.phonebook.PhoneBookController - called method getContacts(term = null)
+2023-04-02 13:49:41,640 INFO  ts.phonebook.PhoneBookController - called method getContacts(term = null)
+2023-04-02 13:49:43,529 INFO  ts.phonebook.PhoneBookController - called method deleteContacts(idsToDeleteInString = 1)
+2023-04-02 13:49:43,551 INFO  ts.phonebook.PhoneBookController - called method getContacts(term = null)
