@@ -9,7 +9,7 @@ import ru.academits.model.ErrorInfo;
 
 @ControllerAdvice
 public class ErrorController {
-    private final Logger logger = LogManager.getLogger(PhoneBookController.class);
+    private final Logger logger = LogManager.getLogger(ErrorController.class);
 
     @ExceptionHandler(Exception.class)
     @ResponseBody
