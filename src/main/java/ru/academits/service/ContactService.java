@@ -77,4 +77,8 @@ public class ContactService {
     public List<Contact> getContacts(String term) {
         return contactDao.getContacts(term);
     }
+
+    public int deleteRandomContact(){
+        return contactDao.deleteRandomContact();
+    }
 }

@@ -6,6 +6,7 @@ import ru.academits.model.Contact;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
@@ -68,5 +69,20 @@ public class ContactDao {
         }
 
         return deletedContactsCount;
+    }
+
+    public int deleteRandomContact() {
+        if (contactList.size() < 1) {
+            return -1;
+        }
+
+        Random random = new Random();
+
+        int randomNumber = random.nextInt(contactList.size());
+        int deletedContactId = contactList.get(randomNumber).getId();
+
+        contactList.remove(randomNumber);
+
+        return deletedContactId;
     }
 }
